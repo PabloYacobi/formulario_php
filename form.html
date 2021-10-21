@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+</head>
+<body>
+<form action="script.php" onsubmit="checkForm(event);">
+    <input type="text" name="username" placeholder="Username" />
+    <div>Username can't be empty</div>
+    <input type="password" name="password" placeholder="Password" />
+    <div>Password can't be empty</div>
+    <input type="submit" value="Login">
+</form>
+
+<p id="logmess" style="display:none">
+    Username and password have to be at least 4 characters long
+</p>
+</body>
+<script src="script.js"></script>
+</html>
